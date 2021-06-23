@@ -104,7 +104,7 @@ const shapes = setInterval(() => {
   if (number === 1) {
     countSQ++;
     seeCountSQ();
-    holder.insertAdjacentHTML("beforeend", `<div class="square"></div`);
+    holder.insertAdjacentHTML("afterbegin", `<div class="square"></div`);
     const square = document.querySelector(".square");
     arrSQ.push(square);
     square.style.backgroundColor = getRandomColor();
@@ -117,7 +117,7 @@ const shapes = setInterval(() => {
   } else if (number === 2) {
     countC++;
     seeCountC();
-    holder.insertAdjacentHTML("beforeend", `<div class="circle"></div`);
+    holder.insertAdjacentHTML("afterbegin", `<div class="circle"></div`);
     const circle = document.querySelector(".circle");
     arrC.push(circle);
     circle.style.backgroundColor = getRandomColor();
@@ -133,7 +133,7 @@ const shapes = setInterval(() => {
   } else if (number === 3) {
     countT++;
     seeCountT();
-    holder.insertAdjacentHTML("beforeend", `<div class="triangle"></div`);
+    holder.insertAdjacentHTML("afterbegin", `<div class="triangle"></div`);
     const triangle = document.querySelector(".triangle");
     arrT.push(triangle);
     triangle.style.position = "absolute";
